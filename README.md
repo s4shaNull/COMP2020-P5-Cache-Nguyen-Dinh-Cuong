@@ -6,6 +6,8 @@
 
 #### :question: Associated Questions
 1. What is the smallest capacity that brings the miss rate to less than 10%? 
-- Answer: 2^12 B or 4 MB
+- Answer: 2^12 B or 4 KB
+2. What is the smallest capacity that brings the miss rate to less than 5%?
+- Answer: 2^15 B or 32 KB
+3. Today's processors generally have 32KB to 128KB first-level data caches. By what ratio does increasing the cache size from 16KB to 32KB reduce the miss rate? (2.0 would be halving the miss rate; 1.0 would be no change in miss rate; less than 1.0 would be an increase in misses).
 
-2. 
