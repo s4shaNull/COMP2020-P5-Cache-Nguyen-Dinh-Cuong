@@ -49,6 +49,6 @@ Team Members:
 13. Explain the observed miss rate associated with a large block size.
 - Answer: As the block size increases, the number of cold misses decreases. Thus, we have a lower miss rate associated with a large block size
 14. What is the block size with the lowest miss rate?
-- Answer: 512 B with 0.52 miss rate
+- Answer: 512 B with 0.52% miss rate
 
 
