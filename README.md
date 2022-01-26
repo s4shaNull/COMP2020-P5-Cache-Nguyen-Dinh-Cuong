@@ -15,4 +15,11 @@
 - Answer: 1.34 / 1.17 = 134/117 ~ 1.145
 5. When deciding on an ideal cache size, engineers typically look for the "knee" of the curve. (Links to an external site.) When considering various cache sizes, we want the point at which increasing to that size yields a great benefit, but increasing beyond that size yields far less benefit. What would you say is the ideal cache size for a direct mapped cache? 
 - Answer: From the graph, we can see that the knee of the curve is at x = 14. Therefore, the ideal cache size for a direct mapped cache is 2^14 B or 16 KB
+6. What is the smallest capacity that brings the miss rate of the 2-way set associative cache to less than 10%?
+- Answer: 2^12 B or 4 KB
+7. What is the smallest capacity that brings the miss rate of the 2-way set associative cache to less than 5%?
+- Answer: 2^13 B or 8 KB
+8. How large must the direct-mapped cache before it equals or exceeds the performance of the 1 KB 2-way assoc?
+
+
 
