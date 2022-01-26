@@ -51,9 +51,9 @@ Team Members:
 14. What is the block size with the lowest miss rate?
 - Answer: 512 B with 0.52% miss rate
 18. Why does the miss rate get worse with more cores?
-- Answer:
+- Answer: Multicore -> More Cold Misses -> More Miss Rate
 19. If the miss rate is so bad, why would one use the VI protocol over no protocol?
-- Answer: 
+- Answer: Trade off between IPC and Miss Rate
 
 ### :chart_with_downwards_trend: Graph 4: Total Memory Traffic vs Block Size
 
