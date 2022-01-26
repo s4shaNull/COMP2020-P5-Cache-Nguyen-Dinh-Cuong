@@ -38,7 +38,7 @@ Team Members:
 10. Why does the difference between the two schemes diverge at small cache sizes?
 11. Why does the difference between the two schemes diverge at large cache sizes?
 
-### :chart_with_upwards_trend: Graph 3: Miss Rate vs. Block Size
+### :chart_with_downwards_trend: Graph 3: Miss Rate vs. Block Size
 <p align="center">
   <img src="https://user-images.githubusercontent.com/84661482/151237307-ac96285e-f94a-45f3-982a-79db45c43241.png">
 </p>
