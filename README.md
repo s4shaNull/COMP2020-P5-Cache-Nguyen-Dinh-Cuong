@@ -68,6 +68,9 @@ Team Members:
 - Answer: 
 
 ### :chart_with_downwards_trend: Graph 5: Replicate Graph #3 (Miss Rate vs Block Size for 1, 2, & 4 cores) but this time with MSI Protocol
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/84661482/151241814-99a6246b-e530-4108-a801-c73059c91842.png">
+</p>
 
 #### :question: Associated Questions
 20. Is there ever a scenario in which the VI protocol would be preferable to the MSI protocol? If so, provide that scenario. If not, explain why not.
