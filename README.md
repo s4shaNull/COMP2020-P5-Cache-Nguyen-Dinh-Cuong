@@ -25,7 +25,7 @@ Team Members:
 7. What is the smallest capacity that brings the miss rate of the 2-way set associative cache to less than 5%?
 - Answer: 2^13 B or 8 KB
 8. How large must the direct-mapped cache be before it equals or exceeds the performance of the 1 KB 2-way assoc?
-- Answer: The miss rate of the 1 KB 2-way set associative cache is 11.18%. Thus, the direct-mapped cache must have the capacity of 2^11 B or 2 KB (the miss rate = 12.86%) before it equals or exceeds the performance of the 1 KB 2-way set associative cache.
+- Answer: The miss rate of the 1 KB 2-way set associative cache is 11.18%. Thus, the direct-mapped cache must have the capacity of 2^11 B or 2 KB (the miss rate = 12.86%) before it equals or exceeds the performance of the 1 KB 2-way set associative cache
 
 ### :chart_with_downwards_trend: Graph 2: Bus Writes vs. Cache Size
 <p align="center">
@@ -34,7 +34,7 @@ Team Members:
 
 #### :question: Associated Questions
 9. At what cache size do the two write policies generate approximately the same amount of writes to the bus?
-- Answer: From the graph, we can see that at x = 10, or cache size = 1 KB, the two write policies generate approximately the same amount of writes to the bus.
+- Answer: From the graph, we can see that at x = 10, or cache size = 1 KB, the two write policies generate approximately the same amount of writes to the bus
 10. Why does the difference between the two schemes diverge at small cache sizes?
 11. Why does the difference between the two schemes diverge at large cache sizes?
 
@@ -45,9 +45,10 @@ Team Members:
 
 #### :question: Associated Questions
 12. Explain the observed miss rate associated with a small block size.
-- Answer: 
+- Answer: As the block size decreases, the number of cold misses increases. Thus, we have a higher miss rate associated with a small block size
 13. Explain the observed miss rate associated with a large block size.
-
+- Answer: As the block size increases, the number of cold misses decreases. Thus, we have a lower miss rate associated with a large block size
 14. What is the block size with the lowest miss rate?
+- Answer: 512 B with 0.52 miss rate
 
 
