@@ -52,7 +52,7 @@ Team Members:
 - Answer: 512 B with 0.52% miss rate
 18. Why does the miss rate get worse with more cores?
 - Answer:
-19. If the miss rate is so bad, why would one us the VI protocol over no protocol?
+19. If the miss rate is so bad, why would one use the VI protocol over no protocol?
 - Answer: 
 
 ### :chart_with_downwards_trend: Graph 4: Total Memory Traffic vs Block Size
