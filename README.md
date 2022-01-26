@@ -30,5 +30,6 @@
 #### :question: Associated Questions
 9. At what cache size do the two write policies generate approximately the same amount of writes to the bus?
 - Answer: From the graph, we can see that at x = 10, or cache size = 1 KB, the two write policies generate approximately the same amount of writes to the bus.
-
+10. Why does the difference between the two schemes diverge at small cache sizes?
+11. Why does the difference between the two schemes diverge at large cache sizes?
 
