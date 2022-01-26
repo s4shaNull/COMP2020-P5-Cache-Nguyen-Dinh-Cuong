@@ -22,4 +22,9 @@
 8. How large must the direct-mapped cache be before it equals or exceeds the performance of the 1 KB 2-way assoc?
 - Answer: The miss rate of the 1 KB 2-way set associative cache is 11.18%. Thus, the direct-mapped cache must have the capacity of 2^11 B or 2 KB (the miss rate = 12.86%) before it equals or exceeds the performance of the 1 KB 2-way set associative cache.
 
+### :chart_with_downwards_trend: Graph 2: Bus Writes vs Cache Size
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/84661482/151166658-37b368eb-caa9-46c3-84cc-0aa6cf763aba.png">
+</p>
+
 
