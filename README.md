@@ -1,4 +1,9 @@
 # COMP2020-P5-Cache-Nguyen-Dinh-Cuong
+Team Members:
+- Nguyen Dinh Cuong
+- Nguyen Duy Anh Quan
+- Nguyen Trong Nhan
+- Tran Tuan Viet
 ### :chart_with_downwards_trend: Graph 1: Miss Rate vs. Cache Size
 <p align="center">
   <img src="https://user-images.githubusercontent.com/84661482/151161395-18ff7e0e-5a57-4583-b1db-99ab5e8b46b3.png">
@@ -37,3 +42,12 @@
 <p align="center">
   <img src="https://user-images.githubusercontent.com/84661482/151183782-20159513-8f0f-4b91-8554-30e36600a53e.png">
 </p>
+
+#### :question: Associated Questions
+12. Explain the observed miss rate associated with a small block size.
+- Answer: 
+13. Explain the observed miss rate associated with a large block size.
+
+14. What is the block size with the lowest miss rate?
+
+
