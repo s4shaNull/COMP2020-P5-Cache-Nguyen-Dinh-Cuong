@@ -75,9 +75,9 @@ Team Members:
 #### :question: Associated Questions
 20. Is there ever a scenario in which the VI protocol would be preferable to the MSI protocol? If so, provide that scenario. If not, explain why not.
 - Answer:
-21. For a 2 core trace, what a block size of 64B, what fraction of bus snoops by Core 0 are "hits" (i.e., the LD_MISS or ST_MISS on the bus is for a cache line that is currently valid in Core 0's cache.
+21. For a 2 core trace, with a block size of 64B, what fraction of bus snoops by Core 0 are "hits" (i.e., the LD_MISS or ST_MISS on the bus is for a cache line that is currently valid in Core 0's cache.
 - Answer:
-22. For a 4 core trace, what a block size of 64B, what fraction of bus snoops by Core 0 are "hits"?
+22. For a 4 core trace, with a block size of 64B, what fraction of bus snoops by Core 0 are "hits"?
 - Answer:
 23. What is one characteristic of the workload (visible in statistics in the output) that reconciles the high snoop hit rate and the low miss rates in Graph #5?
 - Answer:
