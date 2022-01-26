@@ -27,4 +27,8 @@
   <img src="https://user-images.githubusercontent.com/84661482/151166658-37b368eb-caa9-46c3-84cc-0aa6cf763aba.png">
 </p>
 
+#### :question: Associated Questions
+9. At what cache size do the two write policies generate approximately the same amount of writes to the bus?
+- Answer: 
+
 
