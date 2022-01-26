@@ -1,0 +1,16 @@
+block_size 		    4 B
+miss_rate 		5.63
+block_size 		    8 B
+miss_rate 		4.10
+block_size 		   16 B
+miss_rate 		3.02
+block_size 		   32 B
+miss_rate 		1.86
+block_size 		   64 B
+miss_rate 		1.12
+block_size 		  128 B
+miss_rate 		0.76
+block_size 		  256 B
+miss_rate 		0.60
+block_size 		  512 B
+miss_rate 		0.52

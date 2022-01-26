@@ -1,0 +1,30 @@
+capacity   		  256 B
+miss_rate 		25.06
+capacity   		  512 B
+miss_rate 		16.62
+capacity   		 1024 B
+miss_rate 		11.18
+capacity   		 2048 B
+miss_rate 		10.46
+capacity   		 4096 B
+miss_rate 		8.53
+capacity   		 8192 B
+miss_rate 		2.66
+capacity   		16384 B
+miss_rate 		1.30
+capacity   		32768 B
+miss_rate 		1.12
+capacity   		65536 B
+miss_rate 		1.10
+capacity   		131072 B
+miss_rate 		1.07
+capacity   		262144 B
+miss_rate 		1.07
+capacity   		524288 B
+miss_rate 		1.07
+capacity   		1048576 B
+miss_rate 		1.07
+capacity   		2097152 B
+miss_rate 		1.07
+capacity   		4194304 B
+miss_rate 		1.07

@@ -1,0 +1,45 @@
+capacity   		  256 B
+B_written_cache_to_bus_wb 	175360
+B_written_cache_to_bus_wt 	34968
+capacity   		  512 B
+B_written_cache_to_bus_wb 	74816
+B_written_cache_to_bus_wt 	34968
+capacity   		 1024 B
+B_written_cache_to_bus_wb 	19712
+B_written_cache_to_bus_wt 	34968
+capacity   		 2048 B
+B_written_cache_to_bus_wb 	14464
+B_written_cache_to_bus_wt 	34968
+capacity   		 4096 B
+B_written_cache_to_bus_wb 	10432
+B_written_cache_to_bus_wt 	34968
+capacity   		 8192 B
+B_written_cache_to_bus_wb 	8320
+B_written_cache_to_bus_wt 	34968
+capacity   		16384 B
+B_written_cache_to_bus_wb 	3904
+B_written_cache_to_bus_wt 	34968
+capacity   		32768 B
+B_written_cache_to_bus_wb 	1088
+B_written_cache_to_bus_wt 	34968
+capacity   		65536 B
+B_written_cache_to_bus_wb 	768
+B_written_cache_to_bus_wt 	34968
+capacity   		131072 B
+B_written_cache_to_bus_wb 	0
+B_written_cache_to_bus_wt 	34968
+capacity   		262144 B
+B_written_cache_to_bus_wb 	0
+B_written_cache_to_bus_wt 	34968
+capacity   		524288 B
+B_written_cache_to_bus_wb 	0
+B_written_cache_to_bus_wt 	34968
+capacity   		1048576 B
+B_written_cache_to_bus_wb 	0
+B_written_cache_to_bus_wt 	34968
+capacity   		2097152 B
+B_written_cache_to_bus_wb 	0
+B_written_cache_to_bus_wt 	34968
+capacity   		4194304 B
+B_written_cache_to_bus_wb 	0
+B_written_cache_to_bus_wt 	34968
