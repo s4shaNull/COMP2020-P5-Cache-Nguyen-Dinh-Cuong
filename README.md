@@ -57,5 +57,25 @@ Team Members:
 
 ### :chart_with_downwards_trend: Graph 4: Total Memory Traffic vs Block Size
 
+#### :question: Associated Questions
+15. What is the block size with the lowest total write-back traffic (transferred in + write-back transferred out)
+- Answer:
+16. What are the two sources of additional traffic as the block size grows? Explain why each grows.
+- Answer:
+17. Given that current processors typically use, say, 64B blocks, which metric (miss rate or traffic) are today's caches designed to minimize?
+- Answer: 
+
+### :chart_with_downwards_trend: Graph 5: Replicate Graph #3 (Miss Rate vs Block Size for 1, 2, & 4 cores) but this time with MSI Protocol
+
+#### :question: Associated Questions
+20. Is there ever a scenario in which the VI protocol would be preferable to the MSI protocol? If so, provide that scenario. If not, explain why not.
+- Answer:
+21. For a 2 core trace, what a block size of 64B, what fraction of bus snoops by Core 0 are "hits" (i.e., the LD_MISS or ST_MISS on the bus is for a cache line that is currently valid in Core 0's cache.
+- Answer:
+22. For a 4 core trace, what a block size of 64B, what fraction of bus snoops by Core 0 are "hits"?
+- Answer:
+23. What is one characteristic of the workload (visible in statistics in the output) that reconciles the high snoop hit rate and the low miss rates in Graph #5?
+- Answer:
+
 
 
