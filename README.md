@@ -5,3 +5,6 @@
 </p>
 
 #### :question: Associated Questions
+1. What is the smallest capacity that brings the miss rate to less than 10%?
+Answer: 2^12 B or 4 MB
+2. 
