@@ -20,6 +20,6 @@
 7. What is the smallest capacity that brings the miss rate of the 2-way set associative cache to less than 5%?
 - Answer: 2^13 B or 8 KB
 8. How large must the direct-mapped cache be before it equals or exceeds the performance of the 1 KB 2-way assoc?
-- Answer: The miss rate of the 1 KB 2-way set associative cache is 11.18%. Thus, the direct-mapped cache must have the capacity of 2 KB before it equals or exceeds the performance of the 1 KB 2-way set associative cache.
+- Answer: The miss rate of the 1 KB 2-way set associative cache is 11.18%. Thus, the direct-mapped cache must have the capacity of 2 KB (the miss rate = 12.86%) before it equals or exceeds the performance of the 1 KB 2-way set associative cache.
 
 
