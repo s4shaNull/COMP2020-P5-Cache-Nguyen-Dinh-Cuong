@@ -150,9 +150,5 @@ bool access_cache(cache_t *cache, unsigned long addr, enum action_t action) {
     }
   }
   bool writeback_f = cache->lines[index][cache->lru_way[index]].dirty_f == 1;
-  if (action == LD_MISS || action == ST_MISS)
-  {
-    writeback_f = false;
-  }
   return update_cache(cache, tag, index, cache->lru_way[index], action, VALID, false, writeback_f, false);
 }
