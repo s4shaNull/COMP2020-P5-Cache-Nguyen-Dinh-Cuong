@@ -40,7 +40,7 @@ Team Members:
 
 ### :chart_with_downwards_trend: Graph 3: Miss Rate vs. Block Size
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/84661482/151183782-20159513-8f0f-4b91-8554-30e36600a53e.png">
+  <img src="https://user-images.githubusercontent.com/84661482/151236430-a1f0306d-aa48-406c-8c4a-3c356caf3a78.png">
 </p>
 
 #### :question: Associated Questions
