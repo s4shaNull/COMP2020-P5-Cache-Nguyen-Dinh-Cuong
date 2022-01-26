@@ -137,8 +137,179 @@ bool update_cache(cache_t *cache, unsigned long tag, unsigned long index, int ch
   return hit_f;
 }
 
+bool vi_protocol(cache_t *cache, unsigned long addr, enum action_t action)
+{
+  unsigned long tag = get_cache_tag(cache, addr);
+  unsigned long index = get_cache_index(cache, addr);
+  log_set(index);
+  for (int a = 0; a < cache->assoc; a++)
+  {
+    if (tag == cache->lines[index][a].tag)
+    {
+      if (cache->lines[index][a].state == INVALID)
+      {
+        if (action == LD_MISS || action == ST_MISS)
+        {
+          return update_cache(cache, tag, index, cache->lru_way[index], action, INVALID, false, false, false);
+        }
+        else
+        {
+          return update_cache(cache, tag, index, cache->lru_way[index], action, VALID, false, false, false);
+        }
+      }
+      else
+      {
+        if (action == LD_MISS || action == ST_MISS)
+        {
+          return update_cache(cache, tag, index, a, action, INVALID, true, cache->lines[index][a].dirty_f, false);
+        }
+        else
+        {
+          return update_cache(cache, tag, index, a, action, VALID, true, false, false);
+        }
+      }
+    }
+  }
+  bool evict_dirty = cache->lines[index][cache->lru_way[index]].dirty_f;
+  if (cache->lines[index][cache->lru_way[index]].state == INVALID)
+  {
+    if (action == LD_MISS || action == ST_MISS)
+    {
+      return update_cache(cache, tag, index, cache->lru_way[index], action, INVALID, false, evict_dirty, false);
+    }
+    else
+    {
+      return update_cache(cache, tag, index, cache->lru_way[index], action, VALID, false, evict_dirty, false);
+    }
+  }
+  else
+  {
+    if (action == LD_MISS || action == ST_MISS) 
+    {
+      return update_cache(cache, tag, index, cache->lru_way[index], action, VALID, false, false, false);
+    }
+    else
+    {
+      return update_cache(cache, tag, index, cache->lru_way[index], action, VALID, false, evict_dirty, false);
+    }
+  }
+}
+
+bool msi_protocol(cache_t *cache, unsigned long addr, enum action_t action)
+{
+  unsigned long tag = get_cache_tag(cache, addr);
+  unsigned long index = get_cache_index(cache, addr);
+  log_set(index);
+  for (int a = 0; a < cache->assoc; a++)
+  {
+    if (tag == cache->lines[index][a].tag)
+    {
+      if (cache->lines[index][a].state == INVALID)
+      {
+        if (action == LOAD) 
+        {
+          return update_cache(cache, tag, index, cache->lru_way[index], action, SHARED, false, false, false);
+        }
+        else if (action == STORE) 
+        {
+          return update_cache(cache, tag, index, cache->lru_way[index], action, MODIFIED, false, false, false);
+        }
+        else
+        {
+          return update_cache(cache, tag, index, cache->lru_way[index], action, INVALID, false, false, false);
+        }
+      }
+      else if (cache->lines[index][a].state == MODIFIED)
+      {
+        if (action == LD_MISS)
+        {
+          return update_cache(cache, tag, index, a, action, SHARED, true, true, false);
+        }
+        else if (action == ST_MISS) 
+        {
+          return update_cache(cache, tag, index, a, action, INVALID, true, true, false);
+        }
+        else
+        {
+          return update_cache(cache, tag, index, a, action, MODIFIED, true, false, false);
+        }
+      }
+      else
+      {
+        if (action == STORE)
+        {
+          return update_cache(cache, tag, index, a, action, MODIFIED, false, false, true);
+        }
+        else if (action == ST_MISS)
+        {
+          return update_cache(cache, tag, index, a, action, INVALID, true, false, false);
+        }
+        else
+        {
+          return update_cache(cache, tag, index, a, action, SHARED, true, false, false);
+        }
+      }
+    }
+  }
+  bool evict_dirty = cache->lines[index][cache->lru_way[index]].dirty_f;
+  if (cache->lines[index][cache->lru_way[index]].state == INVALID) 
+  {
+    if (action == LOAD) 
+    {
+      return update_cache(cache, tag, index, cache->lru_way[index], action, SHARED, false, evict_dirty, false);
+    }
+    else if (action == STORE) 
+    {
+      return update_cache(cache, tag, index, cache->lru_way[index], action, MODIFIED, false, evict_dirty, false);
+    }
+    else
+    {
+      return update_cache(cache, tag, index, cache->lru_way[index], action, INVALID, false, evict_dirty, false);
+    }
+  }
+  else if (cache->lines[index][cache->lru_way[index]].state == MODIFIED)
+  {
+    if (action == LD_MISS)
+    {
+      return update_cache(cache, tag, index, cache->lru_way[index], action, SHARED, false, true, false);
+    }
+    else if (action == ST_MISS)
+    {
+      return update_cache(cache, tag, index, cache->lru_way[index], action, INVALID, false, true, false);
+    }
+    else
+    {
+      return update_cache(cache, tag, index, cache->lru_way[index], action, SHARED, false, evict_dirty, false);
+    }
+  }
+  else 
+  {
+    if (action == STORE) 
+    {
+      return update_cache(cache, tag, index, cache->lru_way[index], action, MODIFIED, false, evict_dirty, false);
+    }
+    else if (action == ST_MISS) 
+    {
+      return update_cache(cache, tag, index, cache->lru_way[index], action, INVALID, false, evict_dirty, false);
+    }
+    else
+    {
+      return update_cache(cache, tag, index, cache->lru_way[index], action, SHARED, false, evict_dirty, false);
+    }
+  }
+  return false;
+}
+
 bool access_cache(cache_t *cache, unsigned long addr, enum action_t action) {
   // FIX THIS CODE!
+  if (cache->protocol == VI)
+  {
+    return vi_protocol(cache, addr, action);
+  }
+  else if (cache->protocol == MSI)
+  {
+    return msi_protocol(cache, addr, action);
+  }
   unsigned long tag = get_cache_tag(cache, addr);
   unsigned long index = get_cache_index(cache, addr);
   log_set(index);
@@ -150,5 +321,9 @@ bool access_cache(cache_t *cache, unsigned long addr, enum action_t action) {
     }
   }
   bool writeback_f = cache->lines[index][cache->lru_way[index]].dirty_f == 1;
+  if (action == LD_MISS || action == ST_MISS)
+  {
+    writeback_f = false;
+  }
   return update_cache(cache, tag, index, cache->lru_way[index], action, VALID, false, writeback_f, false);
 }

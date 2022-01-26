@@ -40,18 +40,41 @@ cache_stats_t *make_cache_stats() {
 */
 void update_stats(cache_stats_t *stats, bool hit_f, bool writeback_f, bool upgrade_miss_f, enum action_t action) {
   if (hit_f)
-    stats->n_hits++;
-  
+  {
+      if (action == LOAD || action == STORE)
+      {
+        stats->n_hits++;
+      }
+      else
+      {
+        stats->n_snoop_hits++;
+      }
+  }
+
+  if (action == LOAD || action == STORE)
+  {
+    stats->n_cpu_accesses++;
+  }
+  else
+  {
+    stats->n_bus_snoops++;
+  }
+
   if (action == STORE)
+  {
     stats->n_stores++;
+  }
 
   if (writeback_f)
+  {
     stats->n_writebacks++;
-  
-  if (upgrade_miss_f)
-    stats->n_upgrade_miss++;
+  }
 
-  stats->n_cpu_accesses++;
+  if (upgrade_miss_f)
+  {
+    stats->n_upgrade_miss++;
+  }
+
 }
 
 // could do this in the previous method, but that's a lot of extra divides...
