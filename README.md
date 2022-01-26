@@ -38,7 +38,7 @@ Team Members:
 10. Why does the difference between the two schemes diverge at small cache sizes?
 11. Why does the difference between the two schemes diverge at large cache sizes?
 
-### :chart_with_downwards_trend: Graph 3: Miss Rate vs. Block Size
+### :chart_with_upwards_trend: Graph 3: Miss Rate vs. Block Size
 <p align="center">
   <img src="https://user-images.githubusercontent.com/84661482/151237307-ac96285e-f94a-45f3-982a-79db45c43241.png">
 </p>
@@ -50,10 +50,12 @@ Team Members:
 - Answer: As the block size increases, the number of cold misses decreases. Thus, we have a lower miss rate associated with a large block size
 14. What is the block size with the lowest miss rate?
 - Answer: 512 B with 0.52% miss rate
+18. Why does the miss rate get worse with more cores?
+- Answer:
+19. If the miss rate is so bad, why would one us the VI protocol over no protocol?
+- Answer: 
 
 ### :chart_with_downwards_trend: Graph 4: Total Memory Traffic vs Block Size
-
-
 
 
 
