@@ -1,5 +1,10 @@
 # COMP2020-P5-Cache-Nguyen-Dinh-Cuong
-### :chart_with_downwards_trend: Graph 1: Miss Rate vs Cache Size
+Team Members:
+- Nguyen Dinh Cuong
+- Nguyen Duy Anh Quan
+- Nguyen Trong Nhan
+- Tran Tuan Viet
+### :chart_with_downwards_trend: Graph 1: Miss Rate vs. Cache Size
 <p align="center">
   <img src="https://user-images.githubusercontent.com/84661482/151161395-18ff7e0e-5a57-4583-b1db-99ab5e8b46b3.png">
 </p>
@@ -20,16 +25,35 @@
 7. What is the smallest capacity that brings the miss rate of the 2-way set associative cache to less than 5%?
 - Answer: 2^13 B or 8 KB
 8. How large must the direct-mapped cache be before it equals or exceeds the performance of the 1 KB 2-way assoc?
-- Answer: The miss rate of the 1 KB 2-way set associative cache is 11.18%. Thus, the direct-mapped cache must have the capacity of 2^11 B or 2 KB (the miss rate = 12.86%) before it equals or exceeds the performance of the 1 KB 2-way set associative cache.
+- Answer: The miss rate of the 1 KB 2-way set associative cache is 11.18%. Thus, the direct-mapped cache must have the capacity of 2^11 B or 2 KB (the miss rate = 12.86%) before it equals or exceeds the performance of the 1 KB 2-way set associative cache
 
-### :chart_with_downwards_trend: Graph 2: Bus Writes vs Cache Size
+### :chart_with_downwards_trend: Graph 2: Bus Writes vs. Cache Size
 <p align="center">
   <img src="https://user-images.githubusercontent.com/84661482/151166658-37b368eb-caa9-46c3-84cc-0aa6cf763aba.png">
 </p>
 
 #### :question: Associated Questions
 9. At what cache size do the two write policies generate approximately the same amount of writes to the bus?
-- Answer: From the graph, we can see that at x = 10, or cache size = 1 KB, the two write policies generate approximately the same amount of writes to the bus.
+- Answer: From the graph, we can see that at x = 10, or cache size = 1 KB, the two write policies generate approximately the same amount of writes to the bus
 10. Why does the difference between the two schemes diverge at small cache sizes?
 11. Why does the difference between the two schemes diverge at large cache sizes?
+
+### :chart_with_downwards_trend: Graph 3: Miss Rate vs. Block Size
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/84661482/151236430-a1f0306d-aa48-406c-8c4a-3c356caf3a78.png">
+</p>
+
+#### :question: Associated Questions
+12. Explain the observed miss rate associated with a small block size.
+- Answer: As the block size decreases, the number of cold misses increases. Thus, we have a higher miss rate associated with a small block size
+13. Explain the observed miss rate associated with a large block size.
+- Answer: As the block size increases, the number of cold misses decreases. Thus, we have a lower miss rate associated with a large block size
+14. What is the block size with the lowest miss rate?
+- Answer: 512 B with 0.52% miss rate
+
+### :chart_with_downwards_trend: Graph 4: Total Memory Traffic vs Block Size
+
+
+
+
 
