@@ -1,5 +1,5 @@
 # COMP2020-P5-Cache-Nguyen-Dinh-Cuong
-### :chart_with_downwards_trend: Graph 1: Miss Rate vs Cache Size
+### :chart_with_downwards_trend: Graph 1: Miss Rate vs. Cache Size
 <p align="center">
   <img src="https://user-images.githubusercontent.com/84661482/151161395-18ff7e0e-5a57-4583-b1db-99ab5e8b46b3.png">
 </p>
@@ -22,7 +22,7 @@
 8. How large must the direct-mapped cache be before it equals or exceeds the performance of the 1 KB 2-way assoc?
 - Answer: The miss rate of the 1 KB 2-way set associative cache is 11.18%. Thus, the direct-mapped cache must have the capacity of 2^11 B or 2 KB (the miss rate = 12.86%) before it equals or exceeds the performance of the 1 KB 2-way set associative cache.
 
-### :chart_with_downwards_trend: Graph 2: Bus Writes vs Cache Size
+### :chart_with_downwards_trend: Graph 2: Bus Writes vs. Cache Size
 <p align="center">
   <img src="https://user-images.githubusercontent.com/84661482/151166658-37b368eb-caa9-46c3-84cc-0aa6cf763aba.png">
 </p>
@@ -33,3 +33,7 @@
 10. Why does the difference between the two schemes diverge at small cache sizes?
 11. Why does the difference between the two schemes diverge at large cache sizes?
 
+### :chart_with_downwards_trend: Graph 3: Miss Rate vs. Block Size
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/84661482/151183782-20159513-8f0f-4b91-8554-30e36600a53e.png">
+</p>
