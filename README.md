@@ -12,7 +12,7 @@
 3. Today's processors generally have 32KB to 128KB first-level data caches. By what ratio does increasing the cache size from 16KB to 32KB reduce the miss rate? (2.0 would be halving the miss rate; 1.0 would be no change in miss rate; less than 1.0 would be an increase in misses).
 - Answer: 1.62/1.34 = 81/67 ~ 1.209
 4. By what ratio does increasing the cache size from 32KB to 64KB reduce the miss rate?
-- Answer: 1.34 /1.17 = 134/117 ~ 1.145
+- Answer: 1.34/1.17 = 134/117 ~ 1.145
 5. When deciding on an ideal cache size, engineers typically look for the "knee" of the curve. (Links to an external site.) When considering various cache sizes, we want the point at which increasing to that size yields a great benefit, but increasing beyond that size yields far less benefit. What would you say is the ideal cache size for a direct mapped cache? 
 - Answer: From the graph, we can see that the knee of the curve is at x = 14. Therefore, the ideal cache size for a direct mapped cache is 2^14 B or 16 KB
 6. What is the smallest capacity that brings the miss rate of the 2-way set associative cache to less than 10%?
