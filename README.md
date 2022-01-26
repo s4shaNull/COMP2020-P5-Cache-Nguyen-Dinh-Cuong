@@ -51,4 +51,9 @@ Team Members:
 14. What is the block size with the lowest miss rate?
 - Answer: 512 B with 0.52% miss rate
 
+### :chart_with_downwards_trend: Graph 4: Total Memory Traffic vs Block Size
+
+
+
+
 
