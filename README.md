@@ -77,7 +77,7 @@ Team Members:
 
 #### :question: Associated Questions
 20. Is there ever a scenario in which the VI protocol would be preferable to the MSI protocol? If so, provide that scenario. If not, explain why not.
-- Answer:
+- Answer: I don't think there is a a scenario in which the VI protocol would be preferable to the MSI protocol since the VI protocol is inefficient as only one cached copy allowed in entire system. Hence, multiple copies can’t exist even if read-only. This will be a very big problem in reality
 21. For a 2 core trace, with a block size of 64B, what fraction of bus snoops by Core 0 are "hits" (i.e., the LD_MISS or ST_MISS on the bus is for a cache line that is currently valid in Core 0's cache.
 - Answer: Fraction of bus snoops by Core 0 are "hits" = 50/365 = 10/73 ~ 0.137
 <p align="center">
