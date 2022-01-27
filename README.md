@@ -53,9 +53,9 @@ Team Members:
 14. What is the block size with the lowest miss rate?
 - Answer: 512 B with 0.52% miss rate
 18. Why does the miss rate get worse with more cores?
-- Answer: Multicore -> More Cold Misses -> More Miss Rate
+- Answer: In a multiprocessor system or a multicore processor, each cpu core/processor comes with its own cache memory. This results in more cold misses, thus, the miss rate get worse with more cores.
 19. If the miss rate is so bad, why would one use the VI protocol over no protocol?
-- Answer: Trade off between IPC and Miss Rate
+- Answer: Although the problem of cache coherency limits the performance of multicore systems, using the VI protocol is still better since the shift towards multicore will achieve continuing exponential performance gains. It's a trade off between the CPU time and the miss rate.
 
 ### :chart_with_downwards_trend: Graph 4: Total Memory Traffic vs Block Size
 <p align="center">
@@ -64,11 +64,11 @@ Team Members:
 
 #### :question: Associated Questions
 15. What is the block size with the lowest total write-back traffic (transferred in + write-back transferred out)
-- Answer:
+- Answer: From the graph, we can see it's 2^2 or 4 B
 16. What are the two sources of additional traffic as the block size grows? Explain why each grows.
-- Answer:
+- Answer: The first source of traffic is the data transfers to fill cache blocks (the number of misses multiplied by the block size). The other source of traffic is write traffics (for the write-back cache system, the traffic is the number of dirty evictions multiplied by the block size). Therefore, the two sources of traffic grows as the block size grows.
 17. Given that current processors typically use, say, 64B blocks, which metric (miss rate or traffic) are today's caches designed to minimize?
-- Answer: 
+- Answer: Average access time is the most important parameter for cache performance: tavg = thit + miss-rate * tmiss. This equation includes more than just the miss rate. A cache with a low miss rate but a large penalty per miss would perform worse than one with a greater miss rate but a significantly lower penalty per miss. It might also have a low miss rate but a long hit time (this is true for large fully associative caches, for instance). For this reason, multilevel of caching are employed. In a single cache, not all of the performance aspects can be maximized. It is challenging to build a cache that is both quick in the common case (a hit) and reduces the costly uncommon case by having a low miss rate when tmiss (memory delay) is specified. Two caches are used to fulfill these two design aims. Because the first level cache reduces hit time, it is generally small and has low associativity. The second level cache reduces the number of misses; it is typically huge, with large blocks and strong associativity. Since 64B is a typical block size for a Level 1 cache, it is attempting to reduce the miss rate.
 
 ### :chart_with_downwards_trend: Graph 5: Replicate Graph #3 (Miss Rate vs Block Size for 1, 2, & 4 cores) but this time with MSI Protocol
 <p align="center">
