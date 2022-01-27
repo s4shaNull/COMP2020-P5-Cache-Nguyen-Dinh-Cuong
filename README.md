@@ -80,8 +80,16 @@ Team Members:
 - Answer:
 21. For a 2 core trace, with a block size of 64B, what fraction of bus snoops by Core 0 are "hits" (i.e., the LD_MISS or ST_MISS on the bus is for a cache line that is currently valid in Core 0's cache.
 - Answer:
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/84661482/151306930-2f19e698-79c1-49ea-872f-4079d8eb5278.png">
+</p>
+Fraction of bus snoops by Core 0 are "hits" = 50/365 = 10/73 ~ 0.137
 22. For a 4 core trace, with a block size of 64B, what fraction of bus snoops by Core 0 are "hits"?
 - Answer:
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/84661482/151307245-46376f37-5977-4f15-809c-9288dd875ab6.png">
+</p>
+Fraction of bus snoops by Core 0 are "hits" = 348/1110 = 58/185 ~ 0.314
 23. What is one characteristic of the workload (visible in statistics in the output) that reconciles the high snoop hit rate and the low miss rates in Graph #5?
 - Answer:
 
