@@ -36,9 +36,9 @@ Team Members:
 9. At what cache size do the two write policies generate approximately the same amount of writes to the bus?
 - Answer: From the graph, we can see that at x = 10, or cache size = 1 KB, the two write policies generate approximately the same amount of writes to the bus
 10. Why does the difference between the two schemes diverge at small cache sizes?
-- Answer:
+- Answer: For the write-through cache, the traffic is the average number of bytes written by each store multiplied by the number of stores, so it will be a constant for a particular trace no matter what the cache size is. On the other hand, for the write-back cache system, the traffic is the number of dirty evictions multiplied by the block size. Because at most one eviction happens per miss, while small cache sizes result in more miss rates, thus, small cache sizes result in large write-back data. This proves that the two schemes diverge at small cache sizes.
 11. Why does the difference between the two schemes diverge at large cache sizes?
-- Answer:
+- Answer: We use the same reasoning of the answer to question 10. Writethrough traffic is a constant for a particular trace, while large cache sizes result in small writeback data (in this case, = 0)
 
 ### :chart_with_downwards_trend: Graph 3: Miss Rate vs. Block Size
 <p align="center">
