@@ -91,7 +91,7 @@ Team Members:
 </p>
 
 23. What is one characteristic of the workload (visible in statistics in the output) that reconciles the high snoop hit rate and the low miss rates in Graph #5?
-- Answer:
+- Answer: It's the block size since more block size means high snoop hit rate and low miss rates
 
 
 
