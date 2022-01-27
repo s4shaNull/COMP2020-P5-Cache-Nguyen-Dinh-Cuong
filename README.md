@@ -58,6 +58,9 @@ Team Members:
 - Answer: Trade off between IPC and Miss Rate
 
 ### :chart_with_downwards_trend: Graph 4: Total Memory Traffic vs Block Size
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/84661482/151290015-ff03abfd-25e6-4248-bf1b-04afa1525b99.png">
+</p>
 
 #### :question: Associated Questions
 15. What is the block size with the lowest total write-back traffic (transferred in + write-back transferred out)
