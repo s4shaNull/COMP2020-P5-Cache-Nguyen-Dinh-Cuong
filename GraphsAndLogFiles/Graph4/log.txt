@@ -1,24 +1,24 @@
 block_size 		    4 B
+n_loads 		26908
 B_total_traffic_wb 	8048
-B_total_traffic_wt 	42992
 block_size 		    8 B
+n_loads 		26908
 B_total_traffic_wb 	11736
-B_total_traffic_wt 	46656
 block_size 		   16 B
+n_loads 		26908
 B_total_traffic_wb 	17376
-B_total_traffic_wt 	52184
 block_size 		   32 B
+n_loads 		26908
 B_total_traffic_wb 	21632
-B_total_traffic_wt 	56216
 block_size 		   64 B
+n_loads 		26908
 B_total_traffic_wb 	26688
-B_total_traffic_wt 	60568
 block_size 		  128 B
+n_loads 		26908
 B_total_traffic_wb 	37120
-B_total_traffic_wt 	69528
 block_size 		  256 B
+n_loads 		26908
 B_total_traffic_wb 	62208
-B_total_traffic_wt 	89496
 block_size 		  512 B
+n_loads 		26908
 B_total_traffic_wb 	114176
-B_total_traffic_wt 	130200
