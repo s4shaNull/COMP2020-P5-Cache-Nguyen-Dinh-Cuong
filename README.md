@@ -37,7 +37,7 @@ Team Members:
 - Answer: From the graph, we can see that at x = 10, or cache size = 1 KB, the two write policies generate approximately the same amount of writes to the bus
 10. Why does the difference between the two schemes diverge at small cache sizes?
 - Answer:
-12. Why does the difference between the two schemes diverge at large cache sizes?
+11. Why does the difference between the two schemes diverge at large cache sizes?
 - Answer:
 
 ### :chart_with_downwards_trend: Graph 3: Miss Rate vs. Block Size
