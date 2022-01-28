@@ -126,8 +126,8 @@ bool update_cache(cache_t *cache, unsigned long tag, unsigned long index, int ch
     if(!hit_f)
     {
       cache->lines[index][chosen_way].dirty_f = 0;
-      update_lru(cache, index, chosen_way);
     }
+    update_lru(cache, index, chosen_way);
   }
   else if (action == STORE)
   {
